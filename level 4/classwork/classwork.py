@@ -8,5 +8,13 @@ print(e)
 
 print(int(4.6)) # ამრგვალებს
 
-# input არის ინფორმაციის შეტანა/შეყვანა
-# output არის ინფორმაციის გამოტანა/გამოყვანა; output ფუნქცია არ გვაქვს, თუმცა print ასრულებს output-ის ფუნქციას
+# დავალება 1: მომხმარებელს შემოტანინეთ ორი რიცხვი
+# და ამ ორი რიცხვის გამოყენებით შევასრულოთ ყველა არითმეტიკული ამოცანები
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+print(num1 + num2)
+print(num1 - num2)
+print(num1 * num2)
+print(num1 / num2)
+print(num1 // num2)
+print(num1 % num2)
