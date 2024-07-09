@@ -1,0 +1,1 @@
+# sololearn-ზე Introduction to Python-ის სავარჯიშოების გაკეთება მოდულის 1 ქვიზის ჩათვლით
