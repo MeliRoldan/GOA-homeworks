@@ -1,5 +1,5 @@
 from turtle import *
-#library
+#library შემოაქვს turtle-ს ყველა ფუნქცია ანუ tutrle-ს ბიბლიოთეკა
 
 #step 1: draw a square
 speed(30)
