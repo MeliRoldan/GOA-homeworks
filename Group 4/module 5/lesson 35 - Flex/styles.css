@@ -1,0 +1,19 @@
+* {
+    margin: 0; /*აშორებს მთლიან გვერდს მზედმეტ მარჯინებს რაც აქვს დეფოულტად ბრაუზერს*/
+    padding: 0; /*აშორებს მთლიან გვერდს მზედმეტ პადინგს რაც აქვს დეფოულტად ბრაუზერს*/
+    box-sizing: border-box; /*ყოველთვის ამით უნდა დავიწყოთ css-ი*/
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.item {
+    width: 10%;
+    height: 10%;
+    padding: 10%;
+    background-color: blueviolet;
+    border: 1px solid violet;
+}

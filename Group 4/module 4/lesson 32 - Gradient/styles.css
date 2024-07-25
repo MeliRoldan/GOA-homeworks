@@ -1,0 +1,19 @@
+* {
+    margin: 0; /*აშორებს მთლიან გვერდს მზედმეტ მარჯინებს რაც აქვს დეფოულტად ბრაუზერს*/
+    padding: 0; /*აშორებს მთლიან გვერდს მზედმეტ პადინგს რაც აქვს დეფოულტად ბრაუზერს*/
+    box-sizing: border-box; /*ყოველთვის ამით უნდა დავიწყოთ css-ი*/
+}
+
+div {
+    width: 30%;
+    height: 30%;
+    padding: 10%;
+    background: linear-gradient( to bottom, green, yellow); /*to + მიმართულების მითითებით შეგვიძლია ვაკონტროლოთ გრადიენტი საიდან დაიწყება, რომელი მხრიდან*/
+}
+
+div {
+    width: 30%;
+    height: 30%;
+    padding: 10%;
+    background: linear-gradient( 45deg, green, yellow); /*აკონტორლებს გრადუსს*/
+}
