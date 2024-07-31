@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header id="header">
+            <p id="userName"></p>
+            <p id="userSurname"></p>
+            <button onclick="exit()">Exit</button>
+        </header>
+
+        <main>
+            <form id="register" class="register">
+                <h1>Register</h1>
+                <input class="input" id="regName" type="text" placeholder="name">
+                <input class="input" id="regSurname" type="text" placeholder="Surname">
+                <input class="input" id="regPass" type="password" placeholder="password">
+
+                <p class="logPage">Are you registered? <span onclick="logback()">Log in</span></p>
+
+                <p id="regAlert"></p>
+
+                <input class="regSubmit" onclick="reg()" type="button" value="Submit">
+            </form>
+
+            <form id="login" class="login">
+                <h1>Log In</h1>
+                <input class="input" id="logName" type="text" 
+                placeholder="name">
+                <input class="input" id="logPass" type="password" placeholder="password">
+
+                <p class="logPage">Are you registered? <span onclick="regback()">Register</span></p>
+
+                <p id="logAlert"></p>
+
+                <input class="regSubmit" onclick="log()" type="button" value="Submit">
+            </form>
+        </main>
+        <script src="classwork.js"></script>
+    </body>
+</html>

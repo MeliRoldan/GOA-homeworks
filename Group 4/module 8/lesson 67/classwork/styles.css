@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 30px;
+    gap: 10px;
+    display: none;
+}
+
+header button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:  3px solid black;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h1 {
+    margin: 10px;
+    padding: 10px;
+}
+
+.input {
+    margin: 5px;
+    padding:  15px 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    border: 2px solid grey;
+}
+
+.regSubmit {
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    border: none;
+    margin-top: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.regSubmit:hover {
+    background-color: blue;
+    color: white;
+}
+
+.logPage {
+    font-size: 0.9rem;
+    margin: 10px;
+}
+
+.logPage span {
+    cursor: pointer;
+    color: green;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:  3px solid black;
+    padding: 30px;
+    border-radius: 10px;
+    display: none;
+}
+
+#logAlert, #regAlert {
+    color: red;
+    font-size: 0.9rem;
+}
