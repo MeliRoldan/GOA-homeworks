@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#main {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: burlywood;
+    padding: 0px 10px 20px 10px;
+    gap: 15px;
+}
+
+button {
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+    cursor: pointer;
+}

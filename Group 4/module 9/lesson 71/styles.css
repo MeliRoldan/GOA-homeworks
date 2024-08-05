@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#main {
+    width: 25%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid green;
+}
+
+#screen {
+    width: 100%;
+    height: 30%;
+    border: 1px solid green;
+    text-align: end;
+}
+
+#screen p {
+    padding: 5px 15px;
+    font-size: 1.5rem;
+    word-wrap: break-word;
+}
+
+#calculator {
+    width: 100%;
+    height: 80%;
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);;
+    grid-template-areas: 
+    'reset reset reset dived'
+    'num num num mult'
+    'num num num minus'
+    'num num num plus'
+    'zero zero zero sum'
+    ;
+}
+
+#zero {
+    grid-area: zero;
+}
+
+
+#reset {
+    grid-area: reset;
+}
+
+#plus {
+    grid-area: plus;
+}
+
+#minus {
+    grid-area: minus;
+}
+
+#mult {
+    grid-area: mult;
+}
+
+#dived {
+    grid-area: dived;
+}
+
+#sum {
+    grid-area: sum;
+}
+
+#calculator button {
+   border: 1px solid green;
+   font-size: 1rem;
+}
