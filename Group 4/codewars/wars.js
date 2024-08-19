@@ -132,15 +132,30 @@
 
 // console.log(solution("Melin"))
 
-function highAndLow(numbers){
-  let numArr = numbers.split(' ');
+// function highAndLow(numbers){
+//   let numArr = numbers.split(' ');
 
-  numArr = numArr.map(Number);
+//   numArr = numArr.map(Number);
 
-  let maxNum = Math.max(...numArr);
-  let minNum = Math.min(...numArr);
+//   let maxNum = Math.max(...numArr);
+//   let minNum = Math.min(...numArr);
 
-  return `${maxNum}  ${minNum}`
+//   return `${maxNum}  ${minNum}`
+// }
+
+// console.log(highAndLow("1 2 3 4 -1"))
+
+function digitalRoot(n) {
+  let str = String(n)
+  console.log(str)
+
+  let sum = 0
+
+  for (let num in str) {
+    sum += Number(str[num])
+  }
+
+  return (sum < 10) ? sum : digitalRoot(sum)
 }
 
-console.log(highAndLow("1 2 3 4 -1"))
+console.log(digitalRoot(243155323456789))

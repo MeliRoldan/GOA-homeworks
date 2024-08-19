@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid gray;
+            width: 30%;
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        label, input, button {
+            width: 150px;
+        }
+
+        button {
+            padding: 10px 0px;
+            width: 100px;
+            margin: 0px 10px;
+            border-radius: 8%;
+            cursor: pointer;
+            text-transform: uppercase;
+            border: none;
+        }
+
+        #register:hover {
+            background-color: whitesmoke;
+            border: 1px solid gray;
+            color: dodgerblue;
+        }
+
+        #login:hover {
+            background-color: whitesmoke;
+            border: 1px solid gray;
+            color: darkcyan;
+        }
+
+        #register {
+            background-color: dodgerblue;
+            color: white;
+        }
+
+        #login {
+            background-color: darkcyan;
+            color: white;
+        }
+
+        #btnDiv {
+            margin: 30px 0px;
+        }
+
+        #accDiv {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 30%;
+            padding: 30px;
+            border-radius: 8px;
+            margin-left: 20px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="firstName">Enter first name:</label>
+        <input id="firstName" type="text" name="firstName">
+        <label for="surname">Enter surname:</label>
+        <input id="surname" type="text" name="surname">
+        <label for="email">Enter email</label>
+        <input id="email" type="email" name="email">
+        <label for="pass">Enter password</label>
+        <input id="pass" type="password" name="password">
+
+        <div id="btnDiv">
+            <button type="submit" id="register">Register</button>
+            <button type="submit" id="login">Login</button>
+        </div>
+    </form>
+    <div id="accDiv">
+        <h1 id="greet"></h1>
+        <p id="notification"></p>
+        <a id="changepass" href="">Change password</a>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
