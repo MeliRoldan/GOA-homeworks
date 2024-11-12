@@ -22,3 +22,18 @@ const largest = numArr.reduce((acc, num) => {
 
 console.log('Odd numbers arr:', oddArr)
 console.log(largest)
+
+
+const arr = ['meli', 'nino', 'nika', 'meli', 'nino'];
+
+const newArr = [];
+
+for (let i = 0; i < arr.length; i++) {
+    if(!newArr.includes(arr[i])) {
+        newArr.push(arr[i])
+    }
+}
+
+console.log(arr)
+
+console.log(newArr)

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .star {
+        font-size: 30px;
+        cursor: pointer;
+        color: gray;
+    }
+    
+    .star.selected {
+        color: gold
+    }
+
+    #status {
+        color:white;
+    }
+</style>
+<body>
+    <button id="orderButton">გააფორმე შეკვეთა</button>
+
+    <p id="confirmText"></p>
+    <p id="orderStatus"></p>
+
+    <button id="reviewButton" style="display: none;">შეფასების დატოვება</button>
+
+    <div id="reviewForm" style="display: none;">
+        <p>შეაფასე მომსახურება:</p>
+        <div id="stars">
+          <span class="star" data-value="1">★</span>
+          <span class="star" data-value="2">★</span>
+          <span class="star" data-value="3">★</span>
+          <span class="star" data-value="4">★</span>
+          <span class="star" data-value="5">★</span>
+        </div>
+        <br>
+        <button id="submitReview">გაგზავნა</button>
+    </div>
+
+    <p id="thankYouMessage" style="display: none;"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
